@@ -38,13 +38,17 @@ input {
 
 .nav2{
   display: flex;
-  margin-left: 30%;
+  margin-left: 20%;
+  margin-right: 5%;
   background-color: white;
 
 }
 .opt{
+  display: block;
   background-color: white;
   border: none;
   color: black;
   font-size: small;
+
 }
+

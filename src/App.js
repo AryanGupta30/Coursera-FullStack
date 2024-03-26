@@ -14,10 +14,10 @@ export default function App() {
           <IoIosSearch color='white' />
         </div>
         <div className='nav2'>
-          <button className='opt'>Online Degrees</button>
+        <button className='opt'>Online Degrees</button>
           <button className='opt'>Find new careers</button>
           <button className='opt'>Log in </button>
-          <button>Join for free</button>
+          <button className='join'>Join for free</button>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const CardItem = ({ program }) => {
             <div className="card-content">
                 <h3 style={{fontSize: '0.8rem'}}>{program.university}</h3>
                 <p style={{fontSize: '0.8rem'}}>{program.degree}</p>
-                <button>Earn a degree</button>
+                <button className="degree">Earn a degree</button>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ export default function App() {
         <img src={require('./assets/logo.png')} alt="Logo" 
         height={100}
         width={160}/>
-        <button>Explore</button>
+        <button style={{marginTop: '-3px'}}>Explore</button>
         <input type="text" placeholder="What do you want to learn?" />
         <div className='icon'>
           <IoIosSearch color='white' />

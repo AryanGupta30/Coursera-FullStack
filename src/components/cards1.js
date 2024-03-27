@@ -1,6 +1,6 @@
 import React from 'react';
 import CardItem from './cardItem';
-import "../css/cards.css"
+import "../css/cards1.css"
 
 const programs = [
     {

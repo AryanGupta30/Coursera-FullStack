@@ -78,20 +78,20 @@ const Home = () => {
         </div>
     </div>
     <div className='benefits' style={{ display: 'flex', flexDirection: 'column',justifyContent:'space-between'}}>
-        <div style={{ fontSize: '1rem',marginLeft:'350px'}}>
+        <div style={{ fontSize: '1rem', display: 'flex', justifyContent: 'center'}}>
             <h1 style={{fontWeight:'500'}}>
                 Invest in your career with Coursera
             </h1>
         </div>
-            <p style={{fontSize:'1rem',marginLeft:'250px',marginRight:'250px',alignContent:'center'}}>
+        <p style={{display: 'flex', fontSize:'1rem', justifyContent: 'center'}}>
             Get access to videos in over 90% of courses, Specializations, and Professional Certificates taught by top instructors from leading universities and companies.
-            </p>
-        <div className='img-cards' style={{display:'flex',flexDirection:'row',marginLeft:'50px',marginRight:'20px'}}>
+        </p>
+        <div className='img-cards' style={{display:'flex', justifyContent: 'center'}}>
             {items.map((item, index) => (
                     <div key={index} style={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'30px'}}>
-                        <img src={item.img} alt="Item Image" style={{width:'100px',height:'80px'}}/>
+                        <img src={item.img} alt="Item Image" style={{width:'100px', height:'80px'}}/>
                         <h3 style={{fontWeight:'400'}}>{item.heading}</h3>
-                        <p style={{fontSize:'1rem',alignContent:'flex-end',marginRight:'5px'}}>{item.para}</p>
+                        <p style={{fontSize:'1rem', marginLeft: '50px'}}>{item.para}</p>
                     </div>
                 ))}
         </div>
@@ -109,8 +109,7 @@ const Home = () => {
         <div style={{display:'flex',flexDirection:'row',marginLeft:'50px',marginRight:'20px'}}>
         {fields.map((field, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '30px' }}>
-                <button style={{backgroundColor:'#ECEFEF',color:'blue',borderWidth: '1px',
-  borderRadius: '30%'}}>{field}</button>
+                <button style={{backgroundColor:'#ECEFEF',color:'blue',borderWidth: '1px', borderRadius: '30%'}}>{field}</button>
             </div>
         ))}
         </div>

@@ -1,0 +1,39 @@
+.card {
+    width: 330px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+    transform: scale(1.05); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-content p {
+    margin-top: 5px; 
+    font-size: 16px; 
+}
+
+button {
+   margin-top:40px; 
+   background-color:#007bff; 
+   color:white; 
+   border:none; 
+   margin-bottom: 0px;
+}

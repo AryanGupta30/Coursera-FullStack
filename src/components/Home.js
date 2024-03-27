@@ -9,8 +9,7 @@ import penn from '../assets/penn.png'
 import stanford from '../assets/stanford.png'
 import umich from '../assets/umich.png'
 import { IoIosSearch } from "react-icons/io";
-
-
+import Cards1 from '../components/cards1';
 
 const Home = () => {
 
@@ -114,6 +113,9 @@ const Home = () => {
         ))}
         </div>
     </div>
+
+    <Cards1 />
+    
     </>
   )
 }

@@ -42,23 +42,25 @@ const Home = () => {
     let fields = ['POPULAR','Business','Computer Science','Data Science','Health','Information Technology','Arts and Humanities']
   return (
     <>
-    <div className='main-div' style={{ display: 'flex', justifyContent: 'space-between', marginLeft: '80px', marginBottom: '85px'}}>
-        <div className='second' style={{ marginRight: '80px', marginTop: '90px'}}>
-            <h1 style={{fontSize: '3.5rem'}}>
+    <div className='main-div' style={{ display: 'flex', justifyContent: 'space-between', marginLeft: '40px', marginBottom: '85px'}}>
+        <div className='second' style={{ marginRight: '80px', marginTop: '60px'}}>
+            <h1 style={{fontSize: '3rem'}}>
                 Unlimited access to Google certificates
             </h1>
             <p style={{fontSize: '1.2rem'}}>
                 Gain the job-ready skills you need with a Google Professional Certificate. Start today and save $100 on your annual subscription. You can also unlock a 25% discount for your organization with Coursera for Teams.
             </p>
-            <button style={{ fontSize: '1em', color: 'white', marginRight: '10px', padding: '15px 40px' }}>
-                Save $100 now <span>&#8594;</span>
-            </button>
-            <button style={{ fontSize: '1em', color: '#00419e', backgroundColor: 'white', padding: '15px 30px' }}>
-                Save on Coursera for Teams <span>&#8594;</span>
-            </button>
+            <div style={{display:'flex'}}>
+                <button style={{ fontSize: '1em', color: 'white', marginRight: '10px', padding: '15px 15px' ,width:'200px',height:'50px'}}>
+                    Save $100 now <span>&#8594;</span>
+                </button>
+                <button style={{ fontSize: '1em', color: '#00419e', backgroundColor: 'white', padding: '15px 15px' ,border:'1px solid',width:'300px',height:'50px'}}>
+                    Save on Coursera for Teams <span>&#8594;</span>
+                </button>
+            </div>
         </div>
-        <div className='second' style={{ marginRight: '17px'}}>
-            <img src={homeImage} alt="Logo" height={500} width={700} />
+        <div className='second' style={{ marginRight: '50px',marginTop:'30px'}}>
+            <img src={homeImage} alt="Logo" height={420} width={620} />
         </div>
     </div>
     <div className='image-row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#f5f5f5'}}>
@@ -87,7 +89,7 @@ const Home = () => {
         <p style={{display: 'flex', fontSize:'1rem', justifyContent: 'center'}}>
             Get access to videos in over 90% of courses, Specializations, and Professional Certificates taught by top instructors from leading universities and companies.
         </p>
-        <div className='img-cards' style={{display:'flex', justifyContent: 'center'}}>
+        <div className='img-cards' style={{display:'flex', justifyContent: 'center',marginRight:'10px'}}>
             {items.map((item, index) => (
                     <div key={index} style={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'30px'}}>
                         <img src={item.img} alt="Item Image" style={{width:'100px', height:'80px'}}/>
@@ -97,15 +99,15 @@ const Home = () => {
                 ))}
         </div>
     </div>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',display:'flex'}}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{ margin: '20px', fontSize: '0.8rem',fontWeight:'normal',paddingTop:'20px' }}>
             <h1>Search the 7,000+ courses in Coursera Plus</h1>
         </div>
         <div style={{display:'flex',flexDirection:'row'}}>
-        <input type="text" placeholder="Arts and Humanities" style={{width:'1000px',backgroundColor:'white',border: '1px solid #ccc',marginLeft:'1px',borderRight:'none'}} />
-        <button style={{height:'50px',width:'50px',backgroundColor:'white',border: '1px solid #ccc',borderLeft:'none',paddingRight:'40px'}}>
-          <IoIosSearch color='black' style={{height:'30px',width:'30px',paddingRight:'20px'}} />
-        </button>
+            <input type="text" placeholder="Arts and Humanities" style={{width:'1000px',backgroundColor:'white',border: '1px solid #ccc',marginLeft:'1px',borderRight:'none',height:'30px'}} />
+            <button style={{height:'50px',width:'50px',backgroundColor:'white',border: '1px solid #ccc',borderLeft:'none',paddingRight:'40px',marginTop:'-1px'}}>
+                <IoIosSearch color='black' style={{height:'30px',width:'30px',paddingRight:'20px'}} />
+            </button>
         </div>
         <div style={{display:'flex',flexDirection:'row',marginLeft:'50px',marginRight:'20px'}}>
         {fields.map((field, index) => (

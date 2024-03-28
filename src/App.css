@@ -41,13 +41,14 @@ input {
   margin-left: 15%;
   /* margin-right: 5%; */
   background-color: white;
+  margin-top: -35px;
 }
 .opt{
   display: block;
   background-color: white;
   border: none;
   color: black;
-  font-size: small;
+  font-size: medium;
 
 }
 
@@ -59,7 +60,7 @@ input {
   background-color: white;
   border: none;
   color: #0056d2;
-  font-size: small;
+  font-size: medium;
 }
 
 .opt2:hover{

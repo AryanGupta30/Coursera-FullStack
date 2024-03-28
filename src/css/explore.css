@@ -1,0 +1,41 @@
+.app {
+    
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.courses {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.course-card {
+    width: 22%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.course-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.course-card h2 {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.course-card p {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #666;
+}

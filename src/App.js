@@ -16,7 +16,7 @@ export default function App() {
         </div>
         <div className='nav2'>
           <div className="dropdown">
-            <button className='opt'>Online Degrees</button>
+            <button className='opt'>Degrees</button>
             <div className="dropdown-content">
               <a href="#"><b>Online Degree</b>
                 <p>Explore Bachelor's & Master's Degrees</p>
@@ -29,7 +29,7 @@ export default function App() {
               </a>
             </div>
           </div>
-          <button className='opt'>Find your New Career</button>
+          <button className='opt'>Find Careers</button>
           <button className='opt2'>Log in </button>
           <button>Join for free</button>
         </div>

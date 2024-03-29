@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CardItem from './cardItem';
 import "../css/cards1.css"
+import { Link } from 'react-router-dom';
 
 const programs = [
     {
@@ -45,7 +46,6 @@ const programs = [
     },
 ];
 
-
 const MainFile = () => {
     const [showAll, setShowAll] = useState(false);
     const visiblePrograms = showAll ? programs : programs.slice(0, 4);
@@ -64,7 +64,7 @@ const MainFile = () => {
             <button onClick={() => setShowAll(!showAll)}>
                 {showAll ? 'Show Less' : 'Show 4 More'}
             </button>
-            <button style={{backgroundColor: 'white', color:'blue'}}>View all<span>&#8594;</span></button>
+            <Link to="/degrees" style={{backgroundColor: 'white', color:'blue'}}>View all<span>&#8594;</span></Link>
         </div>
     );
 };

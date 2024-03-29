@@ -12,7 +12,8 @@ import { IoIosSearch } from "react-icons/io";
 import Cards1 from '../components/cards1';
 import Explore from '../components/explore';
 import Footer from '../components/footer';
-import Pagination from '../components/Pagination';
+
+import Navbar from '../components/navbar'
 
 const Home = () => {
 
@@ -43,6 +44,7 @@ const Home = () => {
     let fields = ['POPULAR','Business','Computer Science','Data Science','Health','Information Technology','Arts and Humanities']
   return (
     <>
+    <Navbar />
     <div className='main-div' style={{ display: 'flex', justifyContent: 'space-between', marginLeft: '40px', marginBottom: '85px'}}>
         <div className='second' style={{ marginRight: '80px', marginTop: '60px'}}>
             <h1 style={{fontSize: '3rem'}}>
@@ -122,7 +124,7 @@ const Home = () => {
     <Cards1 />
     <Explore />
     <Footer />
-    <Pagination/>
+    
     </>
   )
 }

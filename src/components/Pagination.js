@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import PaginationComponent from './getPage';
-import ContentComponent from './PageContent';
+import Geptpage from './getPage';
+import Pagecontent from './PageContent';
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 3; // Set the total number of pages here
-
+  const totalPages = 3; 
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -35,12 +34,42 @@ const Pagination = () => {
         degree: 'Master of Enginnering in Engineering Management',
         img : require('../assets/engmanage.png'),
     },
+    {
+        id:'5',
+        university: 'Illionis Institute of technology',
+        degree: 'Bachelor in Information Technology',
+        img : require('../assets/infotech.png'),
+    },
+    {
+        id:'6',
+        university: 'International Institute of Information technology',
+        degree: 'Master of Science in Information Technology',
+        img : require('../assets/scinfo.png'),
+    },
+    {
+        id:'7',
+        university: 'University of Colorado Boulder',
+        degree: 'Master of Science in Computer Science',
+        img : require('../assets/computer.png'),
+    },
+    {
+        id:'7',
+        university: 'O.P. Jindal Global University',
+        degree: 'MBA Business Analytics',
+        img : require('../assets/jindal.png'),
+    },
+    {
+        id:'9',
+        university: 'Ball State University',
+        degree: 'Master of Science in Data Science',
+        img : require('../assets/ball.png'),
+    },
 ];
   return (
-    <div>
-      <h1>Pagination Example</h1>
-      <ContentComponent currentPage={currentPage} programs={programs}/>
-      <PaginationComponent totalPages={totalPages} onPageChange={handlePageChange} />
+    <div style={{padding: '50px'}}>
+      <h1 style={{fontSize: '25px'}}>Find the right degree for you</h1>
+      <Pagecontent currentPage={currentPage} programs={programs}/>
+      <Geptpage totalPages={totalPages} onPageChange={handlePageChange} />
     </div>
   );
 };

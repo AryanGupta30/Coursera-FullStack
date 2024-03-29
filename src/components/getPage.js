@@ -23,7 +23,7 @@ const PaginationComponent = ({ totalPages, onPageChange }) => {
   return (
     <div>
       {renderPageNumbers()}
-      <p>Current Page: {currentPage}</p>
+      {/* <p>Current Page: {currentPage}</p> */}
     </div>
   );
 };

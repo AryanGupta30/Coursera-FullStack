@@ -6,7 +6,7 @@ const ContentComponent = ({ currentPage, programs,programsPerPage }) => {
   const currentPrograms = programs.slice(startIndex, endIndex);
 
   const getContentForPage = (page) => {
-        return <div style={{display:'flex',gap:'100px'}}>
+        return <div style={{display:'flex',gap:'30px', justifyContent:'center'}}>
             {currentPrograms.map((program, index) => (
                 <CardItem key={index} program={program} />
             ))}

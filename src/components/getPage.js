@@ -12,7 +12,8 @@ const PaginationComponent = ({ totalPages, onPageChange }) => {
     const pageNumbers = [];
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
-        <button key={i} onClick={() => handlePageChange(i)}>
+        <button key={i} onClick={() => handlePageChange(i)} style={{backgroundColor: currentPage === i ? '#00419e' : 'white',
+        color: currentPage === i ? 'white' : 'black', border: '1px solid #ccc',}}>
           {i}
         </button>
       );
@@ -21,9 +22,8 @@ const PaginationComponent = ({ totalPages, onPageChange }) => {
   };
 
   return (
-    <div>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
       {renderPageNumbers()}
-      {/* <p>Current Page: {currentPage}</p> */}
     </div>
   );
 };

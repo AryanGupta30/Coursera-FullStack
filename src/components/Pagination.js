@@ -4,7 +4,7 @@ import Pagecontent from './PageContent';
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const programsPerPage = 3;
+  const programsPerPage = 4;
   const totalPages = 3; 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -64,6 +64,24 @@ const Pagination = () => {
         university: 'Ball State University',
         degree: 'Master of Science in Data Science',
         img : require('../assets/ball.png'),
+    },
+    {
+        id:'10',
+        university: 'University of Illinois at Urbana-Champaign',
+        degree: 'Master of Business Administration (IMBA)',
+        img : require('../assets/datascience.png'),
+    },
+    {
+        id:'11',
+        university: 'University of Colorado Boulder',
+        degree: 'Master of Science in Electrical Engineering',
+        img : require('../assets/electrical.png'),
+    },
+    {
+        id:'12',
+        university: 'University of Colorado Boulder',
+        degree: 'Master of Science in Data Science',
+        img : require('../assets/scinfo.png'),
     },
 ];
   return (

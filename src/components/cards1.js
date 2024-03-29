@@ -2,53 +2,11 @@ import React, { useState } from 'react';
 import CardItem from './cardItem';
 import "../css/cards1.css"
 import { Link } from 'react-router-dom';
-
-const programs = [
-    {
-        university: 'University of Illinois at Urbana-Champaign',
-        degree: 'Master of Business Administration (IMBA)',
-        img : require('../assets/imba.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Science in Electrical Engineering',
-        img : require('../assets/electrical.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Science in Data Science',
-        img : require('../assets/datascience.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Enginnering in Engineering Management',
-        img : require('../assets/engmanage.png'),
-    },
-    {
-        university: 'University of Illinois at Urbana-Champaign',
-        degree: 'Master of Business Administration (IMBA)',
-        img : require('../assets/imba.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Science in Electrical Engineering',
-        img : require('../assets/electrical.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Science in Data Science',
-        img : require('../assets/datascience.png'),
-    },
-    {
-        university: 'University of Colorado Boulder',
-        degree: 'Master of Enginnering in Engineering Management',
-        img : require('../assets/engmanage.png'),
-    },
-];
+import {programs} from '../constants/data'
 
 const MainFile = () => {
     const [showAll, setShowAll] = useState(false);
-    const visiblePrograms = showAll ? programs : programs.slice(0, 4);
+    const visiblePrograms = showAll ? programs.slice(0,8) : programs.slice(0, 4);
     return (
         <div className="programs-container">
             <h2>Degree Programs</h2>

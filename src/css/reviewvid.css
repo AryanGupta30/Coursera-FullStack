@@ -1,0 +1,40 @@
+
+.video-component {
+    margin-top: 100px ;
+    padding: 90px;
+    background-color: #00255d;
+}
+
+video{
+    margin-left: -6px;
+    width: 50%;
+}
+
+.video-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.icons1 {
+    display: flex;
+}
+
+.icons2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -60px;
+}
+
+.icons2.active {
+   color: white;
+}
+
+.my-button {
+    background-color: blue;
+}
+
+.my-button.active {
+    background-color: white;
+}

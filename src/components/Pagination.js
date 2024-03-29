@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Geptpage from './getPage';
+import Getpage from './getPage';
 import Pagecontent from './PageContent';
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const programsPerPage = 3;
   const totalPages = 3; 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -53,7 +54,7 @@ const Pagination = () => {
         img : require('../assets/computer.png'),
     },
     {
-        id:'7',
+        id:'8',
         university: 'O.P. Jindal Global University',
         degree: 'MBA Business Analytics',
         img : require('../assets/jindal.png'),
@@ -68,8 +69,8 @@ const Pagination = () => {
   return (
     <div style={{padding: '50px'}}>
       <h1 style={{fontSize: '25px'}}>Find the right degree for you</h1>
-      <Pagecontent currentPage={currentPage} programs={programs}/>
-      <Geptpage totalPages={totalPages} onPageChange={handlePageChange} />
+      <Pagecontent currentPage={currentPage} programs={programs} programsPerPage={programsPerPage}/>
+      <Getpage totalPages={totalPages} onPageChange={handlePageChange} />
     </div>
   );
 };

@@ -1,23 +1,17 @@
 import React from 'react';
 import CardItem from './cardItem';
-const ContentComponent = ({ currentPage, programs }) => {
+const ContentComponent = ({ currentPage, programs,programsPerPage }) => {
+  const startIndex = (currentPage - 1) * programsPerPage;
+  const endIndex = startIndex + programsPerPage;
+  const currentPrograms = programs.slice(startIndex, endIndex);
+
   const getContentForPage = (page) => {
-    switch (page) {
-      case 1:
-        return <div style={{display:'flex'}}>
-            {programs.map((program, index) => (
+        return <div style={{display:'flex',gap:'100px'}}>
+            {currentPrograms.map((program, index) => (
                 <CardItem key={index} program={program} />
             ))}
         </div>;
-      case 2:
-        return <div><h2>Content for Page 2</h2></div>;
-      case 3:
-        return <div><h2>Content for Page 3</h2></div>;
-      default:
-        return <div>Invalid Page</div>;
-    }
   };
-
   return (
     <div>
       {

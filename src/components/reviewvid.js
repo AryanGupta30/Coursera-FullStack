@@ -37,7 +37,7 @@ const VideoComponent = () => {
                     &lt;
                 </button>
                 <video src={videos[currentVideo].url} controls paused style={{objectFit: 'cover'}}/>
-                <div style={{backgroundColor: 'white', padding: '100px', fontSize: '1.2rem', objectFit: 'cover'}}>
+                <div style={{backgroundColor: 'white', padding: '100px', fontSize: '1.2rem', objectFit: 'cover',width:'520px',height:'180px'}}>
                     {videos[currentVideo].description}
                 </div>
                 <button className='icons1' disabled={currentVideo === videos.length - 1} onClick={() => setCurrentVideo(currentVideo + 1)}>

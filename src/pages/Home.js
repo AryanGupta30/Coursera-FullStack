@@ -12,6 +12,7 @@ import { IoIosSearch } from "react-icons/io";
 import Cards1 from '../components/cards1';
 import Explore from '../components/explore';
 import Footer from '../components/footer';
+import Pagination from '../components/Pagination';
 
 const Home = () => {
 
@@ -121,6 +122,7 @@ const Home = () => {
     <Cards1 />
     <Explore />
     <Footer />
+    <Pagination/>
     </>
   )
 }

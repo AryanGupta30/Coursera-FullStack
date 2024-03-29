@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 import './App.css';
-import Home from "./components/Home.js"
+import Home from "./pages/Home.js"
 export default function App() {
   return (
     <div>

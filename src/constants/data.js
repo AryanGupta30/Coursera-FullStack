@@ -88,3 +88,30 @@ export const courses = [
   ];
 
 
+export const articles=[
+    {
+        heading:'A Guide to Online Bachelors Degrees',
+        content:'I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.',
+        update:'Last Updated on November 29,2023',
+        time:'6'
+    },
+    {
+        heading:'A Guide to Online Bachelors Degrees',
+        content:'I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.',
+        update:'Last Updated on November 29,2023',
+        time:'6'
+    },
+    {
+        heading:'A Guide to Online Bachelors Degrees',
+        content:'I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.',
+        update:'Last Updated on November 29,2023',
+        time:'6'
+    },
+    {
+        heading:'A Guide to Online Bachelors Degrees',
+        content:'I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.',
+        update:'Last Updated on November 29,2023',
+        time:'6'
+    },     
+];
+

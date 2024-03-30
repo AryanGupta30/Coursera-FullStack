@@ -9,7 +9,7 @@ const MainFile = () => {
     const visiblePrograms = showAll ? programs.slice(0,8) : programs.slice(0, 4);
     return (
         <div className="programs-container">
-            <h2>Degree Programs</h2>
+            <h2 style={{marginBottom:'5px'}}>Degree Programs</h2>
             <p>Get a head start on a degree today</p>
             <h3>With these programs, you can build valuable skills, earn career credentials, and make progress toward a degree before you even enroll.</h3>
             

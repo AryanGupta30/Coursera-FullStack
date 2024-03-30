@@ -4,6 +4,7 @@ import Pagination from '../components/Pagination';
 import Explore from '../components/explore'
 import Footer from '../components/footer'
 import Review from '../components/reviewvid'
+import Articles from '../components/articles'
 
 export default function Degrees() {
   return (
@@ -15,6 +16,7 @@ export default function Degrees() {
       <Pagination/>
       <Explore />
       <Review />
+      <Articles/>
       <Footer />
     </>
   )

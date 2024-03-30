@@ -1,6 +1,10 @@
+.articleitem:hover{
+    transform: scale(1.05);
+    transition: 5ms;
+}
+
 p{
     margin-top: 10px;
-    margin-bottom: -10px;
     font-size: 0.8rem;
 }
 

@@ -30,9 +30,9 @@ const VideoComponent = () => {
     const [currentVideo, setCurrentVideo] = useState(0);
 
     return (
-        <div className="video-component">
+        <div className={`video-component video-slide`}>
             <h1 style={{color: 'white', marginTop: '-50px', marginBottom: '40px'}}>Hear why students enjoy learning on Coursera</h1>
-            <div className="video-description" style={{display: 'flex', justifyContent: 'center'}}>
+            <div className="video-description">
                 <button className='icons1' disabled={currentVideo === 0} onClick={() => setCurrentVideo(currentVideo - 1)}>
                     &lt;
                 </button>

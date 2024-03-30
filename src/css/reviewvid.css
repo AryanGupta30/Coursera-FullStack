@@ -3,6 +3,7 @@
     margin-top: 100px ;
     padding: 90px;
     background-color: #00255d;
+    transition: transform 0.5s ease;
 }
 
 video{
@@ -41,4 +42,8 @@ video{
 
 .my-button.active {
     background-color: white;
+}
+
+.video-slide {
+    transform: translateX(-${currentVideo * 100}%);
 }

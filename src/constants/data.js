@@ -115,3 +115,28 @@ export const articles=[
     },     
 ];
 
+export const items = [
+    {
+        img : require('../assets/learn.png'),
+        heading: 'Learn Anything',
+        para:'Explore any interest or trending topic, take prerequisites, and advance your skills'
+    },
+    {
+        img : require('../assets/money.png'),
+        heading: 'Save money',
+        para:'Explore any interest or trending topic, take prerequisites, and advance your skills'
+    },
+    {
+        img : require('../assets/flexible.png'),
+        heading: 'Flexible learning',
+        para:'Explore any interest or trending topic, take prerequisites, and advance your skills'
+    },
+    {
+        img : require('../assets/certificates.png'),
+        heading: 'Unlimited Certificates',
+        para:'Explore any interest or trending topic, take prerequisites, and advance your skills'
+    },
+
+];
+
+export const fields = ['POPULAR','Business','Computer Science','Data Science','Health','Information Technology','Arts and Humanities'];

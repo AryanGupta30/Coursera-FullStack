@@ -8,11 +8,11 @@ import Homepagecompo from '../components/homepagecompo';
 const Home = () => {
   return (
     <>
-        <Navbar />
-        <Homepagecompo />
-        <Cards1 />
-        <Explore />
-        <Footer />
+      <Navbar />
+      <Homepagecompo />
+      <Cards1 />
+      <Explore />
+      <Footer />
     </>
   )
 }

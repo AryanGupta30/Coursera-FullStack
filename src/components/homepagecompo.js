@@ -5,7 +5,7 @@ import {items, fields} from '../constants/data'
 const homepagecompo = () => {
   return (
     <>
-        <div className='main-div' style={{ display: 'flex', justifyContent: 'space-between', marginLeft: '40px', marginBottom: '85px'}}>
+        <div className='main-div' style={{ display: 'flex', justifyContent: 'space-between', marginLeft: '40px', marginBottom: '85px', marginTop: '100px'}}>
             <div className='second' style={{ marginRight: '80px', marginTop: '60px'}}>
                 <h1 style={{fontSize: '3rem'}}>
                     Unlimited access to Google certificates

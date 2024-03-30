@@ -140,3 +140,38 @@ export const items = [
 ];
 
 export const fields = ['POPULAR','Business','Computer Science','Data Science','Health','Information Technology','Arts and Humanities'];
+
+export const faques = [
+    {
+        ques: 'Are the degrees hosted on Coursera from accredited universities?',
+        description: 'Yes, all online degree programs available on Coursera are directly conferred by accredited institutions. Accreditation is important because it shows that an institution meets rigorous academic standards, eases your ability to transfer credits, and helps employers validate the quality of education on your resume or application.'
+    },
+    {
+        ques: 'Can I transfer previously earned college credits?',
+        description: 'That depends on the degree you’re interested in earning. Many of the bachelor’s degrees on Coursera from US-based institutions, such as Georgetown University’s Bachelor of Arts in Liberal Studies, allow students to transfer some previously earned college credits. Some, like the University of North Texas’ Bachelor of Applied Arts and Sciences and Bachelor of Science in General Business, are degree completion programs and require transfer credits in order to enroll. Each university determines the number of pre-approved transfer credits that may count towards the degree requirements according to institutional policies. Check with each degree program for more information. You can also build credit toward an online degree program by first enrolling in university pre-approved courses, specializations, and certificates on Coursera. If you decide to apply and are admitted, the courses you’ve completed may count toward your degree requirements.'
+    },
+    {
+        ques: 'Can I take online degree courses from anywhere in the world?',
+        description: 'Yes, all you need is a reliable internet connection. No matter where you are in the world, you can enroll in the degree programs that Coursera’s university partners offer, though there may be specific application requirements based on your status as a domestic or international student.'
+    },
+    {
+        ques: 'How long do degrees take to finish?',
+        description: 'Many degree programs with Coursera’s university partners are designed to be pursued part-time or full-time, depending on your availability.'
+    },
+    {
+        ques: 'What are the application deadlines?',
+        description: 'College application deadlines, for both bachelor’s degrees and master’s degrees, tend to occur just once a year. However, on Coursera, you’ll find greater flexibility from universities. Deadlines tend to occur around three times a year—once in the fall, once in the spring, and once in the summer—depending on the institution.'
+    },
+    {
+        ques: 'What is the online degree experience like on Coursera?',
+        description: 'Earning your degree from a leading university on Coursera means experiencing greater flexibility than in-person degree programs, so you can earn the best degree for your needs without having to relocate or choose between your other responsibilities. You can take your online courses from anywhere in the world, at a pace that works for you.'
+    },
+    {
+        ques: 'Does Coursera offer scholarships or tuition assistance? Where can I find information about them?',
+        description: 'You cannot apply for a scholarship or tuition assistance directly from Coursera. However, many university partners offer an opportunity to apply for financial support directly. Check with each degree program for more information.'
+    },
+    {
+        ques: 'Is an online degree worth it?',
+        description: 'Education is a valuable tool you can use to achieve some goals: pivot to a new field, progress in your career, or learn about a subject in more depth. Online degree programs on Coursera come from accredited university partners and typically offer the same curriculum as their in-person degree programs.'
+    },
+];

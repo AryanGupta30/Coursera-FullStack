@@ -6,7 +6,7 @@ import {programs} from '../constants/data'
 
 const MainFile = () => {
     const [showAll, setShowAll] = useState(false);
-    const visiblePrograms = showAll ? programs.slice(0,8) : programs.slice(0, 4);
+    const visiblePrograms = showAll ? programs.slice(0, 8) : programs.slice(0, 4);
     return (
         <div className="programs-container">
             <h2 style={{marginBottom:'5px'}}>Degree Programs</h2>

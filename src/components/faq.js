@@ -15,7 +15,7 @@ const FAQ = () => {
                 {visibleQuestions.map((item, index) => (
                     <div key={index} className="faq-item">
                         <h3
-                            className={`question ${selectedQues === index ? 'active' : ''}`}
+                            className='question' 
                             onClick={() => setSelectedQues(selectedQues === index ? null : index)}
                         >
                             {item.ques}

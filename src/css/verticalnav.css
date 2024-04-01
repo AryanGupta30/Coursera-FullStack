@@ -1,0 +1,14 @@
+
+.opt {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .opt.active {
+    background-color: blue;
+    color: white;
+  }
+  

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "../components/navbar"
 import Footer from '../components/footer'
 import tabgirl from '../assets/tab.png';
+import Vertnav from '../components/verticalnav';
 
 export default function Articles() {
   return (
@@ -16,6 +17,8 @@ export default function Articles() {
           <img src={tabgirl} alt="Logo" height={420} width={420} />
         </div>
       </div>
+
+      <Vertnav />
       <Footer />
     </>
   )

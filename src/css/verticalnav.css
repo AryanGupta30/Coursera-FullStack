@@ -1,14 +1,28 @@
+.button-group{
+  margin-top: 50px;
+  width: 350px;
+}
+
 
 .buttt {
-    background-color: #f0f0f0;
-    border: none;
+    background-color: white;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
+    display:flex;
+    color: black;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+
   }
   
   .buttt.active {
-    background-color: blue;
-    color: white;
+    background-color: #f0f0f0;
+    border-left: 5px solid blue;
+    color: blue;
   }
   

@@ -175,3 +175,28 @@ export const faques = [
         description: 'Education is a valuable tool you can use to achieve some goals: pivot to a new field, progress in your career, or learn about a subject in more depth. Online degree programs on Coursera come from accredited university partners and typically offer the same curriculum as their in-person degree programs.'
     },
 ];
+
+export const videos = [
+    {
+        url: require('../assets/video1.mp4'),
+        description: 
+        "Live sessions, office hours, discussion boards—participating from wherever I am for my MBA makes me feel empowered; I don't have to stop working, being a mother, or having my life.",
+    },
+    {
+        url: require('../assets/video2.mp4'),
+        description: "The program offered me the chance to improve my ability to solve global-scale problems, engaging in numerous hands-on projects, crucial for building confidence as a student entering a new field.",
+    },
+    {
+        url: require('../assets/video3.mp4'),
+        description: "The program's flexibility is exceptional. I aim to maintain my job while acquiring the skills to become a better entrepreneur and intrapreneur. I've grown into a superior boss, collaborator, and inspirer of my global teams.",
+    },
+    {
+        url: require('../assets/video4.mp4'),
+        description: 
+        "There's a strong community on Slack and online—potentially even stronger than what some of us encountered in our campus-based undergraduate programs.",
+    },
+    {
+        url: require('../assets/video5.mp4'),
+        description: "I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.",
+    },
+];

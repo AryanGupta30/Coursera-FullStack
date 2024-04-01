@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import '../css/verticalnav.css'
 
 function ButtonGroup() {
+    const infoData = {
+        Home: 'Welcome to our website!',
+        Data: 'Here is some data information...',
+        Business: 'Learn more about our business...',
+      };
   const [activeButton, setActiveButton] = useState('Home');
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);

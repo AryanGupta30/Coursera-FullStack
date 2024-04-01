@@ -9,7 +9,7 @@ export default function Articles() {
       <Navbar />
       <div style={{display: 'flex', justifyContent: 'center', marginTop: '100px', backgroundColor: '#f5f7f8'}}>
         <div style={{padding: '70px', paddingRight: '130px'}}>
-            <h1 style={{fontSize: '3.1rem'}}>Coursera Articles</h1>
+            <div><h1 style={{fontSize: '3.1rem', fontWeight: 'normal'}}>Coursera Articles</h1></div>
             <p style={{paddingRight:'150px', fontSize: '1.2rem'}}>We envision a world where anyone, anywhere has the power to transform their lives through learning. Take the next step in your learning journey by exploring these popular topics.</p>
         </div>
         <div style={{paddingRight: '160px'}}>

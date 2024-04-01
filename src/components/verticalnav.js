@@ -6,6 +6,8 @@ function ButtonGroup() {
         Home: 'Welcome to our website!',
         Data: 'Here is some data information...',
         Business: 'Learn more about our business...',
+        IT: 'Info about it',
+        Health: 'Health info',
       };
   const [activeButton, setActiveButton] = useState('Home');
   const handleButtonClick = (buttonName) => {
@@ -44,6 +46,19 @@ function ButtonGroup() {
       >
         Health
       </button>
+      <div className="info-content">
+        {activeButton === 'Home' ? (
+          <>
+            <p>{infoData.Home}</p>
+            <p>{infoData.Data}</p>
+            <p>{infoData.Business}</p>
+            <p>{infoData.IT}</p>
+            <p>{infoData.Health}</p>
+          </>
+        ) : (
+          <p>{infoData[activeButton]}</p>
+        )}
+      </div>
     </div>
   );
 }

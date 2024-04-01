@@ -27,10 +27,22 @@ function ButtonGroup() {
         Data
       </button>
       <button
-        className={`buttt ${activeButton === 'Business' ? 'active' : ''}`}
+        className={`buttt ${activeButton === 'Business' ? 'active' : ''} `}
         onClick={() => handleButtonClick('Business')}
       >
         Business
+      </button>
+      <button
+        className={`buttt ${activeButton === 'IT' ? 'active' : ''} `}
+        onClick={() => handleButtonClick('IT')}
+      >
+        IT
+      </button>
+      <button
+        className={`buttt ${activeButton === 'Health' ? 'active' : ''} `}
+        onClick={() => handleButtonClick('Health')}
+      >
+        Health
       </button>
     </div>
   );

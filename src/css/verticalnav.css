@@ -1,5 +1,5 @@
 
-.opt {
+.buttt {
     background-color: #f0f0f0;
     border: none;
     padding: 10px 20px;
@@ -7,7 +7,7 @@
     cursor: pointer;
   }
   
-  .opt.active {
+  .buttt.active {
     background-color: blue;
     color: white;
   }

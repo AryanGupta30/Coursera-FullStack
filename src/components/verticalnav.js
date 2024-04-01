@@ -10,19 +10,19 @@ function ButtonGroup() {
   return (
     <div className="button-group">
       <button
-        className={`opt ${activeButton === 'Home' ? 'active' : ''}`}
+        className={`buttt ${activeButton === 'Home' ? 'active' : ''}`}
         onClick={() => handleButtonClick('Home')}
       >
         Home
       </button>
       <button
-        className={`opt ${activeButton === 'Data' ? 'active' : ''}`}
+        className={`buttt ${activeButton === 'Data' ? 'active' : ''}`}
         onClick={() => handleButtonClick('Data')}
       >
         Data
       </button>
       <button
-        className={`opt ${activeButton === 'Business' ? 'active' : ''}`}
+        className={`buttt ${activeButton === 'Business' ? 'active' : ''}`}
         onClick={() => handleButtonClick('Business')}
       >
         Business

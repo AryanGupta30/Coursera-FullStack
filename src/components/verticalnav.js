@@ -11,8 +11,8 @@ function ButtonGroup() {
         setActiveButton(buttonName);
     };
     useEffect(() => {
-        const newFilteredData = infoData.filter(item => item.domain === activeButton);
-        setFilteredData(() => [...newFilteredData]);
+        const newFilteredData = activeButton==='Home'?infoData : infoData.filter(item => item.domain === activeButton);
+        setFilteredData(newFilteredData);
       }, [activeButton]);
 
     //   console.log({filteredData});
@@ -57,7 +57,7 @@ function ButtonGroup() {
                 </button>
             </div>
 
-            <div className="info-content" style={{display:'flex'}}>
+            <div className="info-content" style={{display:'flex',flexDirection:'column'}}>
                 {filteredData.map(item => (
                     <ArticleCard key={item.id} data={item} />
                 ))}

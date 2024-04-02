@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/verticalnav.css';
 import { infoData } from '../constants/data';  // Assuming you have imported the data correctly
 import ArticleCard from '../components/articlecard';  // Assuming the correct component name is ArticleCard
 
 function ButtonGroup() {
     const [activeButton, setActiveButton] = useState('Home');
+    const [filteredData, setFilteredData] = useState([]);
+
     const handleButtonClick = (buttonName) => {
         setActiveButton(buttonName);
     };
+    useEffect(() => {
+        const newFilteredData = infoData.filter(item => item.domain === activeButton);
+        setFilteredData(() => [...newFilteredData]);
+      }, [activeButton]);
 
-    // Filter the data array based on the active button
-    const filteredData = infoData.filter(item => item.id === activeButton);
-    console.log(filteredData);
+    //   console.log({filteredData});
 
     return (
         <>
@@ -53,7 +57,7 @@ function ButtonGroup() {
                 </button>
             </div>
 
-            <div className="info-content">
+            <div className="info-content" style={{display:'flex'}}>
                 {filteredData.map(item => (
                     <ArticleCard key={item.id} data={item} />
                 ))}

@@ -20,11 +20,12 @@ export default function Articles() {
             <p style={{paddingRight:'150px', fontSize: '1.2rem'}}>We envision a world where anyone, anywhere has the power to transform their lives through learning. Take the next step in your learning journey by exploring these popular topics.</p>
         </div>
         <div style={{paddingRight: '160px'}}>
-          <img src={tabgirl} alt="Logo" height={420} width={420} />
+          <img src={tabgirl} alt="Logo" height={380} width={380} style={{marginTop:'20px'}} />
         </div>
       </div>
-
-      <Vertnav />
+      <div style={{display:'flex',flexDirection:'row'}}>
+        <Vertnav />
+      </div>
       <Footer />
     </>
   )

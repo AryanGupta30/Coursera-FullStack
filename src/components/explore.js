@@ -9,7 +9,7 @@ function App() {
       <div className="courses">
         {courses.map((course, index) => (
           <div key={index} className="course-card">
-            <img src={course.img} alt="Data Science" />
+            <img src={course.img} alt={course.category} />
             <div>
               <h2>{course.category}</h2>
               <p>{course.count} courses</p>

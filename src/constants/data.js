@@ -265,3 +265,67 @@ export const videos = [
       "I love the flexibility this program offers. Being able to access materials and attend live lectures from anywhere using my phone or laptop is fantastic.",
   },
 ];
+
+
+export const infoData = [
+  {
+    id: "Home",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/imba.png"),
+  },
+  {
+    id: "Home",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/imba.png"),
+  },
+  {
+    id: "Data",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/imperial.png"),
+  },
+  {
+    id: "Data",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/imperial.png"),
+  },
+  {
+    id: "Business",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/jindal.png"),
+  },
+  {
+    id: "Business",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/jindal.png"),
+  },
+  {
+    id: "IT",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/illionis.png"),
+  },
+  {
+    id: "IT",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/illionis.png"),
+  },
+  {
+    id: "Health",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/ibm.png"),
+  },
+  {
+    id: "Health",
+    heading: "University of Illinois at Urbana-Champaign",
+    description: "Master of Business Administration (IMBA)",
+    img: require("../assets/ibm.png"),
+  },
+];

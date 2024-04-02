@@ -1,5 +1,4 @@
 .app {
-    
     padding: 20px;
     font-family: Arial, sans-serif;
 }
@@ -13,20 +12,20 @@
 }
 .course-card img {
     align-items: left;
-    margin-right: 10px; /* Add some margin between the image and text */
+    margin-right: 10px;
     width: 80px;
     height: 80px;
 }
 .course-card {
-    width: 20%; /* Adjust this value as needed */
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: left;
     text-align: left;
-    margin: 10px; /* Adjust as needed */
+    margin: 10px;
     box-sizing: border-box;
-    background-color: #fff; /* Optional background color */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     height: 80px;
 }
@@ -37,7 +36,7 @@
 }
 
 .course-card h2 {
-    /* background-color: #f8f8f8; */
+    margin-top: -1px;
     margin-bottom: -20px;
     padding: 10px;
     font-size: 14px;
@@ -45,10 +44,8 @@
 }
 
 .course-card p {
-    /* background-color: #f0f0f0; */
     font-weight: bold;
     font-size: 14px;
     color: #666;
-    margin-bottom: 10px;
     padding: 10px;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "../components/navbar"
 import Pagination from '../components/Pagination';
 import Explore from '../components/explore'
@@ -8,6 +8,9 @@ import Articles from '../components/articles'
 import FAQ from '../components/faq'
 
 export default function Degrees() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

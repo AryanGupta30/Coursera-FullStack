@@ -5,17 +5,19 @@ import ArticleCard from '../components/articlecard';  // Assuming the correct co
 
 function ButtonGroup() {
     const [activeButton, setActiveButton] = useState('Home');
-    const [filteredData, setFilteredData] = useState([]);
+    // const [filteredData, setFilteredData] = useState([]);
 
     const handleButtonClick = (buttonName) => {
         setActiveButton(buttonName);
     };
-    useEffect(() => {
-        const newFilteredData = activeButton==='Home'?infoData : infoData.filter(item => item.domain === activeButton);
-        setFilteredData(newFilteredData);
-      }, [activeButton]);
+    // useEffect(() => {
+    //     const newFilteredData = activeButton==='Home'?infoData : infoData.filter(item => item.domain === activeButton);
+    //     setFilteredData(newFilteredData);
+    //   }, [activeButton]);
 
     //   console.log({filteredData});
+
+    const filteredData = activeButton==='Home'?infoData : infoData.filter(item => item.domain === activeButton);
 
     return (
         <>

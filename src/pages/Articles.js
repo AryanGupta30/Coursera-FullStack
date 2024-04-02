@@ -4,8 +4,6 @@ import Footer from '../components/footer'
 import tabgirl from '../assets/tab.png';
 import Vertnav from '../components/verticalnav';
 
-
-
 export default function Articles() {
     useEffect(() => {
       window.scrollTo(0, 0);

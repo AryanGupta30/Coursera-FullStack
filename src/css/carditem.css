@@ -38,3 +38,7 @@
    border:none; 
    margin-bottom: 0px;
 }
+
+.artcard:hover{
+    transform: scale(1.05);
+}

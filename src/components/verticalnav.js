@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/verticalnav.css';
 import { infoData } from '../constants/data'; 
 import ArticleCard from '../components/articlecard';
@@ -9,9 +9,30 @@ function ButtonGroup() {
         setActiveButton(buttonName);
     };
     const filteredData = activeButton==='Home'?infoData : infoData.filter(item => item.domain === activeButton);
+
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const footerHeight = 560, topNavbarHeight = 430;
+            const scrollPosition = window.pageYOffset;
+      
+            if (scrollPosition >= topNavbarHeight && scrollPosition <= window.innerHeight + footerHeight) {
+              setIsSticky(true);
+            } else {
+              setIsSticky(false);
+            }
+          };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
-            <div className="button-group">
+            <div className={`button-group ${isSticky ? 'sticky' : ''}`}>
                 <button
                     className={`buttt ${activeButton === 'Home' ? 'active' : ''}`}
                     onClick={() => handleButtonClick('Home')}

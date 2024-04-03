@@ -3,7 +3,6 @@
   width: 350px;
 }
 
-
 .buttt {
     background-color: white;
     padding: 10px 20px;
@@ -17,7 +16,6 @@
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
-
   }
   
   .buttt.active {
@@ -27,8 +25,19 @@
   }
 
   .info-content {
-    margin-left: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 10%;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+  }
+
+  .sticky + .info-content{
+    margin-left: 16.8%;
   }

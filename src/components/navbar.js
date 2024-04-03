@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 import '../css/navbar.css'
+import { Link } from 'react-router-dom';
 
 const navbar = () => {
   return (
@@ -27,7 +28,7 @@ const navbar = () => {
             </div>
           </div>
           <button className='opt'>Find Careers</button>
-          <button className='opt2'>Log in </button>
+          <Link className='opt2' to="/login" >Log in </Link>
           <button>Join for free</button>
         </div>
     </div>

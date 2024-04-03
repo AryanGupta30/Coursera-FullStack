@@ -17,7 +17,7 @@ function ButtonGroup() {
             const footerHeight = 560, topNavbarHeight = 430;
             const scrollPosition = window.pageYOffset;
       
-            if (scrollPosition >= topNavbarHeight && scrollPosition <= window.innerHeight + footerHeight) {
+            if (scrollPosition >= topNavbarHeight && scrollPosition <= window.innerHeight + footerHeight && scrollPosition<=footerHeight) {
               setIsSticky(true);
             } else {
               setIsSticky(false);

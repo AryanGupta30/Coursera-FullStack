@@ -4,12 +4,12 @@ import axios from 'axios';
 
 const Login = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    name: '',
     email: '',
     password: '',
-    contact: '',
+    contactNumber: '',
     gender: '',
-    dateOfBirth: ''
+    dob: ''
   });
 
   const handleChange = e => {
@@ -23,8 +23,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', formData); // Changed endpoint to '/signup'
-        
+      const response = await axios.post('http://localhost:5000/login', formData);
       console.log(response.data); 
     } catch (error) {
       console.error('Error signing up:', error);
@@ -36,7 +35,7 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <h1 className="text-2xl font-bold">Create Account</h1>
         <div className="infield mt-4">
-          <input type="text" placeholder="Name" name="username" className="input-field" onChange={handleChange} /> {/* Changed name to 'username' */}
+          <input type="text" placeholder="Name" name="name" className="input-field" onChange={handleChange} /> {/* Changed name to 'username' */}
         </div>
         <div className="infield">
           <input type="email" placeholder="Email" name="email" className="input-field" onChange={handleChange} /> {/* Changed name to 'email' */}
@@ -45,7 +44,7 @@ const Login = () => {
           <input type="password" placeholder="Password" name="password" className="input-field" onChange={handleChange} /> {/* Changed name to 'password' */}
         </div>
         <div className="infield">
-          <input type="contact" placeholder="Contact Number" name="contact" className="input-field" onChange={handleChange} /> {/* Changed name to 'contact' */}
+          <input type="contact" placeholder="Contact Number" name="contactNumber" className="input-field" onChange={handleChange} /> {/* Changed name to 'contact' */}
         </div>
         <div className="infield">
           <input type="radio" id="male" name="gender" value="male" onChange={handleChange} /> {/* Added onChange */}
@@ -55,7 +54,7 @@ const Login = () => {
         </div>
         <div>
           <label htmlFor="dateOfBirth">DOB:</label> {/* Changed id to 'dateOfBirth' */}
-          <input type="date" id="dateOfBirth" name="dateOfBirth" onChange={handleChange} /> {/* Changed name to 'dateOfBirth' and added onChange */}
+          <input type="date" id="dateOfBirth" name="dob" onChange={handleChange} /> {/* Changed name to 'dateOfBirth' and added onChange */}
         </div>
         <button type="submit" className="btn mt-4">Sign Up</button>
       </form>

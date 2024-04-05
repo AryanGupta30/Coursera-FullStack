@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', formData);
+      const response = await axios.post('http://localhost:5000/api/user/createUser', {...formData});
       console.log(response.data); 
     } catch (error) {
       console.error('Error signing up:', error);

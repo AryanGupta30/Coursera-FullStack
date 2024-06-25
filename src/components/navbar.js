@@ -4,6 +4,7 @@ import '../css/navbar.css'
 import { Link } from 'react-router-dom';
 
 const navbar = () => {
+
   return (
     <div className='nav'>
         <img src={require('../assets/logo.png')} alt="Logo" height={100} width={160}/>
@@ -29,7 +30,7 @@ const navbar = () => {
           </div>
           <button className='opt'>Find Careers</button>
           <Link className='opt2' to="/login" >Log in </Link>
-          <button>Join for free</button>
+          <Link to="/signup">Join for free</Link>
         </div>
     </div>
   )

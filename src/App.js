@@ -5,6 +5,7 @@ import Degrees from './pages/Degrees.js'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Articles from './pages/Articles.js';
 import Login from './pages/Login.js';
+import Signup from './pages/Signup.js'
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/degrees" element={<Degrees />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
     </BrowserRouter>
   )

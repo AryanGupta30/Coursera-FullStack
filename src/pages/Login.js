@@ -1,16 +1,15 @@
 // Login.js (React component)
 import React, { useState } from 'react';
 import axios from 'axios'; 
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     password: '',
-    contactNumber: '',
-    gender: '',
-    dob: ''
   });
+  const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -23,40 +22,35 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user/createUser', {...formData});
+      const response = await axios.post('http://localhost:5000/api/user/login', {...formData});
       console.log(response.data); 
+      setErrorMessage(''); // Clear error message if successful
+      navigate('/');
     } catch (error) {
-      console.error('Error signing up:', error);
+      if (error.response && error.response.status === 403) { // Assuming 401 is the status code for "unauthorized"
+        setErrorMessage("User doesn't exists. Please try again.");
+      } else if (error.response && error.response.status === 401) { // Assuming 401 is the status code for "unauthorized"
+        setErrorMessage('Invalid email or password. Please try again.');
+      }
+      else {
+        console.error('Error logging in:', error);
+        setErrorMessage('An error occurred during login. Please try again.');
+      }
     }
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h1 className="text-2xl font-bold">Create Account</h1>
-        <div className="infield mt-4">
-          <input type="text" placeholder="Name" name="name" className="input-field" onChange={handleChange} /> {/* Changed name to 'username' */}
-        </div>
+        <h1 className="text-2xl font-bold">Login Account</h1>
         <div className="infield">
           <input type="email" placeholder="Email" name="email" className="input-field" onChange={handleChange} /> {/* Changed name to 'email' */}
         </div>
         <div className="infield">
           <input type="password" placeholder="Password" name="password" className="input-field" onChange={handleChange} /> {/* Changed name to 'password' */}
         </div>
-        <div className="infield">
-          <input type="contact" placeholder="Contact Number" name="contactNumber" className="input-field" onChange={handleChange} /> {/* Changed name to 'contact' */}
-        </div>
-        <div className="infield">
-          <input type="radio" id="male" name="gender" value="male" onChange={handleChange} /> {/* Added onChange */}
-          <label htmlFor="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female" onChange={handleChange} /> {/* Changed value to 'female' and added onChange */}
-          <label htmlFor="female">Female</label>
-        </div>
-        <div>
-          <label htmlFor="dateOfBirth">DOB:</label> {/* Changed id to 'dateOfBirth' */}
-          <input type="date" id="dateOfBirth" name="dob" onChange={handleChange} /> {/* Changed name to 'dateOfBirth' and added onChange */}
-        </div>
-        <button type="submit" className="btn mt-4">Sign Up</button>
+        <button type="submit" className="btn mt-4">Login In</button>
+        {errorMessage && <div className="error-message mt-4">{errorMessage}</div>} {/* Display error message */}
       </form>
     </div>
   );
